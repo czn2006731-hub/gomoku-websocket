@@ -10,6 +10,14 @@
 - 对局数据与用户积分保存到 MySQL
 - 浏览器端静态页面
 
+## 前端
+<img width="1271" height="683" alt="屏幕截图 2026-10-18 110227" src="https://github.com/user-attachments/assets/40338ca4-fe1d-4b31-aaee-6b2510440674" />
+
+<img width="1276" height="682" alt="屏幕截图 2026-10-18 110239" src="https://github.com/user-attachments/assets/27518cb2-54cf-423c-9dc7-b24a7d3dd3ff" />
+
+<img width="1277" height="731" alt="image" src="https://github.com/user-attachments/assets/b2549496-651d-4c70-8622-a88ca70839a9" />
+
+
 ## 项目结构
 
 ```text
