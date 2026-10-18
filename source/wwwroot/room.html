@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fa">
+  <title>棋局 · 对局中</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body data-page="room">
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="wordmark" href="/index.html" aria-label="返回大厅">棋局<span>·</span></a>
+      <button id="leave-room-button" class="text-button" type="button">返回大厅</button>
+    </header>
+
+    <main class="page-main room-main">
+      <section class="game-head" aria-labelledby="room-title">
+        <div>
+          <p class="eyebrow">LIVE GAME</p>
+          <h1 id="room-title">实时对局</h1>
+        </div>
+        <p id="game-status" class="status-copy" role="status" aria-live="polite">正在准备棋盘…</p>
+      </section>
+
+      <div class="room-grid">
+        <aside class="player-panel" aria-label="玩家信息">
+          <div class="player-row" id="white-player">
+            <span class="stone stone-white" aria-hidden="true"></span>
+            <div><strong id="white-name">等待加入</strong><span id="white-level">等级 --</span></div>
+          </div>
+          <div class="turn-marker" id="turn-marker">白棋先行</div>
+          <div class="player-row" id="black-player">
+            <span class="stone stone-black" aria-hidden="true"></span>
+            <div><strong id="black-name">等待加入</strong><span id="black-level">等级 --</span></div>
+          </div>
+          <p class="room-tip">点击交叉点落子。棋盘状态以服务器返回为准。</p>
+        </aside>
+
+        <section class="board-wrap" aria-label="五子棋棋盘">
+          <div id="board" class="board" role="grid" aria-label="15 × 15 五子棋棋盘"></div>
+        </section>
+
+        <aside class="chat-panel" aria-label="房间聊天">
+          <div id="chat-log" class="chat-log" role="log" aria-live="polite" aria-label="聊天记录"></div>
+          <form id="chat-form" class="chat-form">
+            <label class="sr-only" for="chat-input">聊天内容</label>
+            <input id="chat-input" maxlength="200" autocomplete="off" placeholder="输入消息…" disabled>
+            <button class="button button-primary" type="submit" disabled>发送</button>
+          </form>
+        </aside>
+      </div>
+    </main>
+  </div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

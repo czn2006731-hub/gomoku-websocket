@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fa">
+  <title>棋局 · 大厅</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body data-page="hall">
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="wordmark" href="/index.html" aria-label="棋局大厅">棋局<span>·</span></a>
+      <div class="user-actions">
+        <span id="user-name" class="user-name">正在读取用户名…</span>
+        <button id="logout-button" class="text-button" type="button">离开</button>
+      </div>
+    </header>
+
+    <main class="page-main lobby-main">
+      <section class="lobby-hero" aria-labelledby="lobby-title">
+        <p class="eyebrow">MATCH ROOM</p>
+        <h1 id="lobby-title">准备好下一局了吗？</h1>
+        <p id="connection-status" class="status-copy" role="status" aria-live="polite">正在连接大厅…</p>
+        <div class="match-controls">
+          <button id="match-button" class="button button-primary button-large" type="button" disabled>开始匹配</button>
+          <button id="cancel-match-button" class="button button-secondary" type="button" disabled>取消</button>
+        </div>
+      </section>
+
+      <section class="lobby-notes" aria-label="对局说明">
+        <article>
+          <span class="note-index">01</span>
+          <h2>自动匹配</h2>
+          <p>系统会依据当前分数，将你加入相应的匹配队列。</p>
+        </article>
+        <article>
+          <span class="note-index">02</span>
+          <h2>实时对局</h2>
+          <p>匹配成功后会自动进入房间，双方同步落子和聊天消息。</p>
+        </article>
+        <article>
+          <span class="note-index">03</span>
+          <h2>胜负结算</h2>
+          <p>五子连珠即获胜；对手掉线时，系统会自动结算本局。</p>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+/source/go
+/source/gobang.log
+/example/ws
+/example/js
+/example/mysql
+*.o
+*.log
